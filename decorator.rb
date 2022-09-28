@@ -1,8 +1,8 @@
 require './nameable'
 
 class Decorator < Nameable
-
   def initialize(nameable)
+    super()
     @nameable = nameable
   end
 
@@ -24,5 +24,5 @@ class TrimmerDecorator < Decorator
     else
       super
     end
-end
+  end
 end
