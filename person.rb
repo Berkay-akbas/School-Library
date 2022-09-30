@@ -22,12 +22,7 @@ class Person < Nameable
   def correct_name
     @name
   end
-
-  def add_rental(date, book)
-    rental = Rental.new(date, book, self)
-    @rentals << rental unless @rentals.include?(rental)
-  end
-
+  
   private
 
   def of_age?
